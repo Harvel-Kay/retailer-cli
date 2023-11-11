@@ -13,7 +13,7 @@ function CardBody() {
         className="prod-img"
         onClick={() => {
           setShow(true);
-          setSrc(prod.tag);
+          setSrc(prod.thumbnail);
         }}
       />
     </form>
