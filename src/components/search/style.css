@@ -7,7 +7,7 @@
     max-width: 40%;
     background-color: var(--input-background);
     overflow: var(--overflow);
-    height: 4.2rem;
+    height: 3.4rem;
     margin: .4rem;
 }
 
@@ -33,6 +33,8 @@
     background-color: rgba(10, 10, 170, 0.685);
     position: relative;
     left: .6rem;
+    top: -.2rem;
+    height: 2.8rem;
 }
 
 .search-icon-cont:hover {
@@ -44,4 +46,15 @@
 .searching{
     position: absolute;
     left: .6rem;
+}
+
+@media screen and (min-width:768px) {
+    
+    .search-cont{
+        height: 4.2rem;
+    }
+    .search-icon-cont{
+        top: unset;
+    height: 3rem ;
+    }
 }
