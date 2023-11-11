@@ -1,0 +1,10 @@
+
+.cart-head{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(203, 219, 244, 0.721);
+    padding: 1rem;
+    border-radius: 26px;
+}

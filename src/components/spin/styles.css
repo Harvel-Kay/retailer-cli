@@ -1,0 +1,58 @@
+/* ===========CHAMELEON === */
+@keyframes chameleon {
+    10% {
+        background-color: rgb(255, 179, 0);
+    }
+
+    20% {
+        background-color: rgb(241, 0, 201);
+    }
+
+    30% {
+        background-color: rgb(255, 133, 3);
+    }
+
+    40% {
+        background-color: red;
+    }
+
+    50% {
+        background-color: rgb(255, 255, 255);
+    }
+
+    70% {
+        background-color: rgb(203, 0, 129);
+    }
+
+    85% {
+        background-color: rgb(0, 255, 255);
+    }
+}
+
+/* ===SPIN ==== */
+@keyframes spin {
+    0% {
+        transform: rotate(360deg)
+    }
+}
+
+.spin-cont {
+    --line-x: 30px;
+    --line-eye: calc(var(--line-x) / 2.2);
+    --border: 5.2px;
+    width: var(--line-x);
+    height: var(--line-x);
+    border: var(--border) solid gold;
+    border-bottom-color: blue;
+    border-left-color: blue;
+    border-radius: 100%;
+    animation: spin 1.5s linear infinite forwards;
+}
+
+.spin-eye {
+    border-radius: inherit;
+    width: var(--line-eye);
+    height: var(--line-eye);
+    background-color: gold;
+    animation: chameleon 3s linear 4s infinite forwards;
+}

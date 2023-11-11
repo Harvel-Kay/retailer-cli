@@ -1,0 +1,173 @@
+.app{
+  overflow: var(--overflow);  
+}
+
+.null-mg {
+  margin: --mg-null;
+}
+
+.empty-p{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.sp-btm{
+  margin-bottom: 2rem;
+}
+
+.load-btn {
+  grid-column: 1/-1;
+  margin: 2rem 0 2rem;
+}
+
+/* ==========SEMANTIC CONTAINERS ============= */
+.flex-bx {
+  display: flex;
+}
+
+.flex-b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-x {
+  display: grid;
+}
+
+.grid {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.fixed-full {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  width: var(--width);
+  height: var(--width);
+  background-color: rgba(0, 0, 0, 0.714);
+  z-index: 2000;
+}
+
+
+/* ===========LINKS ==================== */
+._link {
+  text-decoration: none;
+  font-size: var(--mg-x1);
+  font-weight: 600;
+  margin: var(--mg-null);
+  padding: var(--mg-null);
+  
+}
+
+.point {
+  cursor: pointer;
+  transition: transform ease 0.2s;
+}
+
+.point:hover {
+  transform: scale(0.9);
+}
+
+.active {
+  background-color: var(--magenta);
+  height: var(--width);
+}
+
+/* =================FORMS ============= */
+
+/* ===IMAGES ===== */
+
+
+.img {
+  object-fit: cover;
+}
+
+.img-icon {
+  padding: 1rem;
+  background-color: dodgerblue;
+  width: 8rem;
+  border-radius: var(--field-border-radius);
+}
+
+.img-icon:hover {
+  border-radius: 18px;
+  transition: all ease-in-out .2s;
+}
+
+#full-img img {
+  width: 80;
+}
+
+.full-img-cont {
+  width: 94%;
+  max-height: 95%;
+  margin: 2rem auto;
+}
+
+/* =============BUTTONS ========== */
+
+/* -======ICONS====  */
+
+.icon-sm {
+  border-radius: var(--width);
+  width:3rem;
+  height: 3rem;
+  padding: .7rem;
+  margin: var(--mg);
+}
+
+/* .icon-bg {
+  border-radius: var(--width);
+  width: 6rem;
+  height: 6rem;
+  padding: var(--mg-1);
+} */
+
+/* =============COPYRIGHT ================== */
+
+.copy-right {
+  z-index: 30000;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--magenta);
+}
+
+/* ====== NOT FOUND PAGE ============== */
+.min-copy {
+  min-height: 50vh;
+}
+
+/* ===========BTNS ========== */
+
+.red-btn {
+  background-color: var(--magenta);
+}
+
+/* =============PAGINATION ============= */
+.pagination-cont {
+  grid-column: 1/-1;
+  margin: 3.5rem 0;
+  justify-content: space-between;
+  overflow: var(--overflow);
+  width: fit-content
+
+}
+
+.pagination-cont  .form-btn.page-btn{
+  margin :.4rem;
+}
+
+.form-btn.prev{
+  background-color:var(--magenta);
+}
+.form-btn.top{
+  background-color:orangered;
+}
+.form-btn.next{
+  background-color:blue;
+}

@@ -1,0 +1,29 @@
+.form-g.grid{
+    width: 100%;
+    grid-template: 1fr /8rem 1fr;
+}
+
+.form-g.grid .field-control{
+    justify-self: flex-end;
+    margin-bottom: 1rem;
+}
+
+.field-label {
+    display: block;
+    color: var(--primary-text-color);
+    margin: 1rem 0 0;
+    color: white;
+}
+
+.field-control {
+    white-space: var(--white-space);
+    margin: var(--mg-1) 1rem var(--mg);
+}
+
+
+.form-btn:disabled,
+.card-btn:disabled {
+    background-color: rgba(41, 41, 41, 0.986);
+    opacity: 0.6;
+    pointer-events: none;
+}

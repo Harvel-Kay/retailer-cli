@@ -1,0 +1,34 @@
+
+.home-page{
+    height: 90vh;
+    overflow: scroll;
+    grid-template: auto/1fr; 
+    width: 100vw;
+    position: relative;
+}
+
+.home-scroll{
+    grid-template: auto/1fr;
+    min-height: 90vh
+}
+
+@media screen and (min-width:660px) {
+    .home-page,.home-scroll{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width:980px) {
+    .home-page,.home-scroll{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width:1280px) {
+    .home-page,.home-scroll{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media screen and (min-width:1480px) {
+    .home-page,.home-scroll{
+        grid-template-columns: repeat(5,1fr);
+    }
+}

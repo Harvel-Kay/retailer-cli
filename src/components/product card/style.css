@@ -1,0 +1,195 @@
+
+/* ====== ==  CARD STYLES == ====*/
+.card {
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid rgb(221, 224, 221);
+    margin: 1rem;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template: 4rem 1fr 5rem/1fr;
+    border-radius: 10px;
+    overflow: var(--overflow);
+    position: relative;
+}
+
+.card-header {
+    background-color: rgb(0, 123, 247);
+    color: var(--white);
+}
+
+.prod-name,
+.prod-genre {
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width:768px) {
+    .card {
+        width: 30rem;
+        height: 34rem;
+        grid-template: 5rem 3fr 5.5rem/1fr;
+        border-radius: 10px;
+    }
+    .prod-name,
+    .prod-genre {
+        font-size: 1.8rem;
+    }
+}
+
+
+.prod-name {
+    justify-self: flex-start;
+    margin: 1rem 0 0 2rem;
+    white-space: var(--white-space);
+    overflow: var(--overflow);
+    text-overflow: ellipsis;
+}
+
+.prod-genre {
+    justify-self: flex-end;
+    margin-right: 1rem;
+    text-transform: capitalize;
+}
+
+.card-body {
+    background-color: blanchedalmond;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-footer {
+    grid-template: 1fr 2fr /1fr 1fr;
+    position: inherit;
+}
+
+.card-footer .card-footer-title {
+    grid-column: 1/-1;
+    font-size: 1.5rem;
+    justify-self: flex-start;
+    margin-left: 2rem;
+    white-space: var(--white-space);
+    max-width: 16rem;
+    text-overflow: var(--text-overflow);
+    overflow: var(--overflow);
+    color: blue;
+}
+
+.card-footer .stock {
+    grid-column: span 1;
+}
+
+.card-btn {
+    background-color: var(--green);
+    color: var(--white);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 7px;
+    transition: transform ease-in-out 0.2s;
+    font-size: 4rem;
+    margin: 1rem;
+    transition: transform ease-in-out 0.2s;
+}
+
+.prod-sub {
+    background-color: rgb(255, 81, 0);
+}
+
+.form-btn.card-delete {
+    grid-column: unset;
+    padding: 1.2rem;
+    border-radius: 7px;
+    min-width: 8rem;
+    margin: unset;
+    background-color: var(--magenta);
+}
+
+.card-delete p {
+    margin: unset;
+    z-index: 100;
+}
+
+.card-delete.add {
+    background-color: var(--green);
+}
+
+.card:hover {
+    box-shadow: 0 0 6px 2px var(--shaddow);
+}
+
+/* .del-cont {
+    position: absolute;
+    grid-template: 1fr 1fr/1fr 1fr;
+    background-color: rgba(7, 7, 7, 0.777);
+    height: var(--width);
+    width: var(--width);
+    z-index: 10;
+} */
+
+/* .del-p {
+    color: var(--white);
+    grid-column: 1/-1;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0.744);
+    width: 80%;
+    padding: 1rem;
+
+} */
+
+.card .form-btn{
+    padding: .6rem;
+    height: unset;
+    margin: .4rem;
+}
+
+/* .del-btn {
+    align-self: flex-start;
+    grid-column: span 1;
+} */
+
+/* .del-n {
+    background-color: var(--delete-color);
+} */
+
+.selected {
+    color: var(--white);
+    position: absolute;
+    background-color: deeppink;
+    top: -2.58rem;
+    right: 0;
+    box-shadow: 0 0 0 8px var(--white);
+}
+
+.badge-p{
+    font-size: 1.5rem;
+}
+
+/*  =====PROD IMAGE====*/
+.prod-img{
+    position: absolute;
+    object-fit: contain;
+    max-height: 100%;
+}
+
+.prod-img-bg{
+    object-fit: cover;
+    filter: blur(4px);
+}
+
+/* =============PREVIEW CONTAINER========== */
+.preview-cont {
+    width: 64rem;
+    height: 64rem;
+    z-index: 1000;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: var(--shaddow);
+    overflow: var(--overflow);
+}
+
+.preview-img {
+    object-fit: contain;
+    max-width: 100%;
+    /* width: 100px; */
+    /* height: 100px; */
+}

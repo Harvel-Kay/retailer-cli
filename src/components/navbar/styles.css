@@ -1,0 +1,79 @@
+.nav-cont {
+  width: fit-content;
+  justify-self: flex-end;
+  width: 14.5rem;
+  justify-content: space-evenly;
+  margin-right: .5rem;
+}
+
+.admin-nav {
+  width: 30rem;
+  z-index: 10;
+  background-color: rgba(39, 39, 37, 0.582);
+  border-radius: 20px;
+  margin-top: .5rem;
+}
+
+.cart{
+  position: relative;
+}
+
+.cart-badge{
+  z-index: 10;
+  width: 8px;
+  height: 8px;
+  background-color: var(--magenta);
+  border-radius: 100%;
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (min-width: 515px) {
+  .admin-nav {
+    position: absolute;
+    width: 30rem;
+    top: 0.2rem;
+    left: 1rem;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 600px) {
+  .nav-cont {
+    width: 15rem;
+    justify-content: space-evenly;
+  }
+}
+.cont ._link,
+.admin-nav ._link {
+  color: var(--white);
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 0.5rem 1.5rem;
+  margin: 0.5rem;
+  transition: all ease-in-out 0.4s;
+}
+
+.admin-nav ._link {
+  background-color: dodgerblue;
+}
+
+._link.active {
+  background-color: var(--gray);
+}
+
+.buy-btn {
+  color: var(--white);
+  background-color: orangered;
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+  font-weight: 700;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+/* ==========Stock ======== */
+
+._link.out-of-stock {
+  background-color: var(--magenta);
+}

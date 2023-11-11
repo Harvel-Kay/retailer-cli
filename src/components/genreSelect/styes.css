@@ -1,0 +1,19 @@
+.category-cont {
+    height: 100%;
+    width: 11rem;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+.left-border {
+    z-index: 2;
+    position: absolute;
+    left: 25.91rem;
+    right: 0;
+    width: 1px;
+    background-color: black;
+    height: 80%;
+    border-left: 1px solid gray;
+}

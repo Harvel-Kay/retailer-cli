@@ -1,0 +1,103 @@
+.sales{
+    --max-w:60rem;
+}
+
+.date-cont{
+    margin: 1rem;
+}
+
+.time-deltas{
+    background-image: linear-gradient(to right, rgb(45, 126, 255) ,rgb(248, 119, 72));
+    width:26rem;
+    margin: .4rem auto;
+    color: white;
+    border-radius: 5px;
+}
+
+@media screen and (min-width:515px) {
+    .time-deltas {
+        width: 40rem;
+        margin: 6rem auto;
+    }
+}
+
+@media screen and (min-width:515px) {
+    .time-deltas {
+        grid-template: 1fr / repeat(3,1fr);
+        width: 50rem;
+    }
+}
+
+.sales-p{
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.get-sales{
+    grid-column: 1/-1;
+    height: unset;
+    margin: 1rem;
+}
+
+/* =========== SUMMARY TABLE========*/
+ .summary-cont{
+    margin: 2rem;
+ }
+
+.sales-cont{
+    max-height: 42rem;
+    max-width: var(--max-w);
+    overflow: scroll;
+    margin-top: .5rem;
+    overflow-x: hidden;
+}
+
+.title-section{
+    border: 1px solid rgb(132, 125, 125);
+    padding: 1rem;
+    width: var(--max-w);
+    border-radius: 4px;
+    grid-template: 1fr/1fr 2fr 1fr;
+}
+
+.sale-spin{
+    grid-column: 1/-1;
+    margin: .4rem;
+}
+
+.sale-cont{
+    border-bottom: 1px solid blue;
+    grid-template: 1fr/1fr 1fr 1fr;
+    margin-bottom: .5rem;
+    justify-items: unset;
+}
+
+
+.sales-cont .item{
+    grid-template: 1fr /repeat(2,1fr);
+}
+
+.item p,.item em{
+    overflow: var(--overflow);
+    white-space: nowrap;
+    max-width: 15ch;
+    text-overflow: ellipsis;
+    padding-inline-end: 1rem;
+}
+
+.item p{
+    position: relative;
+    justify-self: flex-start;
+    color: rgb(93, 90, 90);
+}
+
+.item em{
+    position: relative;
+    justify-self: flex-end;
+}
+
+.sales-total{
+    text-align: end;
+    margin-right: 1rem;
+}

@@ -1,0 +1,24 @@
+/* ================== ERROR CONTAINERS ETC [ERRORS]==== */
+.error {
+    background-color: rgb(234, 4, 4);
+    color: rgb(253, 236, 236);
+    width: fit-content;
+    max-width: 50rem;
+    border-radius: 8px;
+    padding: .4rem;
+    grid-column: 1/-1;
+    font-size:1.4rem ;
+}
+
+.error-p {
+    white-space: var(--white-space);
+    max-width: 20ch;
+    overflow: var(--overflow);
+    text-overflow: ellipsis;
+}
+
+.fixed-err {
+    position: absolute;
+    top: 1.8rem;
+    right: -1rem;
+}

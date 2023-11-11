@@ -1,0 +1,13 @@
+
+.new-prod{
+    /* background-color: red; */
+    max-width: 90%;
+
+}
+
+.new-prod .field-control.form-select{
+/* height: 2rem; */
+    padding: 1rem;
+    border-radius: 8px;
+/* width: 90%; */
+}

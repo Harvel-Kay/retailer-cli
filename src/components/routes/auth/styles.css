@@ -1,0 +1,84 @@
+.auth-cont{
+    height:90vh;
+    position: relative;
+}
+
+.auth-links{
+    width: 20rem;
+    grid-column: 1/-1;
+    justify-content: space-evenly;
+}
+
+._link.auth{
+    color: dodgerblue;
+    transition: var(--transition);
+}
+
+._link.auth:hover{
+    transform: scale(.9);
+}
+
+
+.login-cont{
+    background-color: rgb(237, 245, 236);
+    min-width: 30rem;
+    padding:3rem 1rem ;
+    border-radius: 5px;
+    grid-template: 1fr/1fr;
+}
+
+.auth-form .field-control{
+    justify-self: flex-end;
+}
+
+@media screen and (min-width:700px) {
+    .login-cont{
+        width: 40rem;
+        padding:1rem ;
+    }
+}
+
+.login-title{
+    margin: 1rem;
+    color:dodgerblue;
+    font-weight: 700;
+}
+
+.auth-title{
+    justify-self: flex-start;
+}
+
+
+.form-g.auth-g{
+    width: unset;
+}
+
+
+/* ===========LOGOUT======== */
+
+.logout-cont{
+    grid-template: 2fr 1fr/repeat(2,1fr);
+    height: 40rem;
+    position: relative;
+    grid-column: 1/-1;
+}
+
+.user-tie-cont{
+    grid-column: 1/-1;
+}
+
+.logout-btn.form-btn{
+    padding: unset;
+    min-width: unset;
+    width: 6rem;
+    height: 3.3rem;
+    justify-self: flex-start;
+}
+
+.logout-icon{
+    justify-self: flex-end;
+}
+
+.grid.login-cont.register{
+    height: fit-content;
+}

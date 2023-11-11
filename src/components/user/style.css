@@ -1,0 +1,14 @@
+.user-cont{
+    height: fit-content;
+}
+
+.user-cont .img-icon{
+    background-color: blue;
+    border-radius: 100%;
+    width: 4rem;
+    height:4rem;
+}
+.user-cont:hover{
+    transform: scale(.9);
+    transition: var(--transition);
+}

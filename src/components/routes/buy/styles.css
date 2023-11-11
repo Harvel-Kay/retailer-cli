@@ -1,0 +1,59 @@
+
+.order-details , .contact-details{
+    grid-column: 1/-1;
+    width: 80%;
+    max-width: 40rem;
+    border-radius: 10px;
+}
+
+.contact-details{
+    background-color: rgb(208, 215, 254);
+    height: 17rem;
+    padding: .5rem;
+}
+
+
+.phone-cont{
+    margin: .5rem;
+    width: 16rem;
+    justify-content: space-evenly;
+    color: deeppink;
+}
+
+.contact{
+    font-size: 1.5rem;
+
+}
+
+.sales-p.thanks{
+    font-style: italic;
+}
+
+.sales-p.info{
+    color: orangered;
+    font-weight:700;
+}
+
+.order-details{
+   position: relative; 
+    background-color: rgb(229, 64, 251);
+    padding: 1rem;
+}
+
+.cart-err{
+    margin: 1rem 0;
+}
+
+.success{
+ background-color: var(--green);
+ position: absolute;
+ width: 90%;
+ padding: 1rem;
+ border-radius: 10px;
+ text-align: center;
+}
+
+.success-p{
+    font-size: 1.5rem;
+    color: white;
+}

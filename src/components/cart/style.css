@@ -1,0 +1,50 @@
+
+/* ==== CART ===== */
+.cart{
+    position: relative;
+    top: 1rem;
+} 
+
+.cart-img{
+    width: 60px;
+}
+
+.cart-tag-cont {
+    background-color: rgb(249, 30, 30);
+    position: absolute;
+    top: -2rem;
+    right: .4rem;
+    color: var(--white);
+    overflow: var(--overflow);
+    white-space: nowrap;
+}
+
+.cart-tag {
+    overflow: inherit;
+    text-overflow: ellipsis;
+}
+
+.cart-cont:hover .cart-tag-cont,
+.selected:hover {
+    width: 6rem;
+    border-radius: 60px;
+    transition: all ease-in-out .5s;
+}
+
+
+/* .form-btn.transact-btn {
+    margin: var(--null-margin);
+    position: relative;
+    grid-column: unset;
+    background-color: orangered;
+    box-shadow: 0 -3px 10px 2px rgb(20, 1, 1);
+}
+
+.transact-btn::before {
+    content: "";
+    position: absolute;
+    top: 4.1rem;
+    border: 12px solid transparent;
+    border-top-color: orangered;
+
+} */
